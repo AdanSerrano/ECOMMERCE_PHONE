@@ -1,8 +1,7 @@
-import { Button, buttonVariants } from "@/components/ui/button"
-
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { MaxWidthWrapper } from "@/components/MaxWidthWrapper"
+import { buttonVariants } from "@/components/ui/button"
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server"
 
 export const Navbar = async () => {
@@ -17,7 +16,7 @@ export const Navbar = async () => {
                     <Link href={"/"} className="flex z-40 font-semibold">
                         case<span className=" text-green-600 ">cobra</span>
                     </Link>
-                    <div className="h-full flex items-center space-x-4">
+                    <div className="h-full flex items-center sm:space-x-4">
                         {user ? (
                             <>
                                 <Link
@@ -31,7 +30,7 @@ export const Navbar = async () => {
 
                                 {isAdmin &&
                                     <Link
-                                        href={'/api/auth/logout'}
+                                        href={'/dashboard'}
                                         className={buttonVariants({
                                             size: 'sm',
                                             variant: 'ghost'

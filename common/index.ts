@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export const people = [
     {
         id: 1,
@@ -56,4 +58,34 @@ export const PHONE = [
     '/testimonials/4.jpg',
     '/testimonials/5.jpg',
     '/testimonials/6.jpg',
+]
+
+export const UploadSection = [
+    {
+        title: 'High-quality silicone material'
+    },
+    {
+        title: 'Scratch- and fingerprint resistant coating'
+    },
+    {
+        title: 'Wireless charging compatible'
+    },
+    {
+        title: '5 year print warranty'
+    },
+]
+
+export const FooterItems = [
+    {
+        link: '#',
+        label: 'Terms'
+    },
+    {
+        link: '#',
+        label: 'Privacy Policy'
+    },
+    {
+        link: '#',
+        label: 'Cookie Policy'
+    },
 ]
